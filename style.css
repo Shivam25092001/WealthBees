@@ -36,6 +36,7 @@ nav{
     justify-content: space-evenly;
     position: sticky;
     margin-top: 4rem;
+    align-items: center;
 }
 .capabilities button , .firms button , .login button , .insights button , .contacts button{
     border: none;
@@ -46,6 +47,7 @@ nav{
     text-shadow: 2px 2px 5px rgba(78, 78, 78, 0.952);
 }
 .capabilities ul, .firms ul{
+    position: absolute;
     background: inherit;
     backdrop-filter: blur(0.9rem);
     background-color: rgba(255, 255, 255, 0.267);
@@ -79,6 +81,16 @@ nav{
     pointer-events: all;
     transform: translateY(4px);
 }
+.burger div{
+    background-color: white;
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    border-radius: 2px;
+}
+.burger{
+    display: none;
+}
 
 
 
@@ -91,6 +103,10 @@ nav{
 
 /* responsiveness */
 @media screen and (max-width: 768px){
+    body{
+        overflow-x: hidden;
+    }
+
     .nav{
         position: absolute;
         top: 0px;
@@ -102,11 +118,40 @@ nav{
         right: 0px;
         top: 0vh;
         height: 100vh;
-        width: 50%;
+        width: 45%;
         margin: 0%;
         background: inherit;
         backdrop-filter: blur(0.9rem);
         background-color: rgba(255, 255, 255, 0.267);
-        justify-content: inherit;
+        justify-content: space-evenly;
+        transform: translateX(100%);
+        transition: transform 0.4s ease-in;
+    }
+    /* .dropdown button{
+        opacity: 0%;
+    } */
+
+
+
+    .burger{
+        display: block;
+        position: absolute;
+        right: 10%;
+        top: 3rem; 
+    }
+}
+
+.dropdown-active{
+    transform: translateX(0%);
+}
+
+@keyframes linkfade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
     }
 }
