@@ -19,6 +19,7 @@ const navSlide = () => {
     });
 
     
+    
 }
 
 navSlide();
