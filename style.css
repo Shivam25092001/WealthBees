@@ -150,6 +150,8 @@ nav {
   color:rgb(71, 71, 71);
 }
 
+
+/* section-1 */
 .section-1 h1{
   position: absolute;
   width: 45vw;
@@ -157,6 +159,33 @@ nav {
   font-size: 5vw;
   text-align: right;
   left: 48vw;
+}
+
+/* section-2 */
+.section-2{
+  display: flex;
+  height: 75vh;
+  justify-content: space-around;
+}
+#line-chart{
+  width: 50%;
+  object-fit: contain;
+  padding: 3rem;
+}
+.section-2 h1{
+  font-size: 4vw;
+}
+.section-2-text{
+  position: relative;
+  top: 18vh;
+  padding-left: 3rem;
+}
+.section-2 a{
+  text-decoration: none;
+  color: #f7ac1d;
+}
+.section-2 p{
+  padding-top: 5vh;
 }
 
 
@@ -282,6 +311,32 @@ footer{
     left: 0;
     padding-right: 3rem;
   }
+
+  /* .section-2 */
+  .section-2{
+    flex-direction: column-reverse;
+  }
+  #line-chart{
+    width: 80vw;
+    object-fit: contain;
+    padding: 3rem 3rem 0px 3rem;
+  }
+  .section-2 h1{
+    font-size: 8vw;
+  }
+  .section-2-text{
+    position: initial;
+    top: 0vh;
+    padding: 3rem;
+  }
+  .section-2 a{
+    text-decoration: none;
+    color: #f7ac1d;
+  }
+  .section-2 p{
+    padding-top: 2vh;
+  }
+
 }
 
 .dropdown-active {

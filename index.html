@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -64,16 +65,18 @@
   </div>
 
   <div class="section-2">
-    <h1>
-      Tension matt lena <br>
-      Profit Banega ...
-    </h1>
-    <p>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit, maxime.
-    </p>
-    <p>
+    <div class="section-2-text">
+      <h1 class="grey">
+        Tension matt lena <br>
+        Profit Banega ...
+      </h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda optio harum laudantium! Ducimus quos, iste pariatur beatae in ex porro?
+      </p>
       <a href="#">Read More ...</a>
-    </p>
+    </div>
+    <!-- <canvas id="line-chart"></canvas> -->
+    <img id="line-chart" src="home-images/graph.png" alt="progress-graph">
   </div>
 
   <div class="section-3">
@@ -117,6 +120,7 @@
     <i>Brand of Cadence Finserve Pvt. Ltd.</i>
   </footer>
   <script src="index.js"></script>
+  <script src="linegraph.js"></script>
 </body>
 </html>
 
