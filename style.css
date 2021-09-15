@@ -78,7 +78,7 @@ nav {
   background-color: rgba(255, 255, 255, 0.267);
   box-shadow: 5px 5px 2px rgba(20, 20, 20, 0.521);
   margin: 5px;
-  width: 15vw;
+  /* width: 15vw; */
   border-radius: 7px;
   opacity: 0;
   pointer-events: none;
@@ -162,31 +162,51 @@ nav {
 }
 
 /* section-2 */
-.section-2{
+.section-2, .section-3, .section-4, .section-5{
   display: flex;
-  height: 75vh;
+  height: 100vh;
   justify-content: space-around;
 }
 #line-chart{
-  width: 50%;
+  width: 45%;
   object-fit: contain;
-  padding: 3rem;
+  padding: 8rem 8rem 8rem 3rem;
 }
-.section-2 h1{
+.section-2 h1, .section-3 h1{
   font-size: 4vw;
 }
 .section-2-text{
   position: relative;
   top: 18vh;
-  padding-left: 3rem;
+  padding-left: 8rem;
 }
-.section-2 a{
+.section-2 a, .section-3 a{
   text-decoration: none;
   color: #f7ac1d;
 }
 .section-2 p{
   padding-top: 5vh;
 }
+
+
+/* section-3 */
+.section-3 h2{ /* actually rupee graphics */
+  padding: 0rem 3rem 0rem 8rem;
+  font-size: 55vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: linear-gradient(to bottom, #bdc3c7, #2c3e50);
+  color:transparent;
+  background-clip:text;
+ -webkit-background-clip:text;
+  align-self: center;
+}
+.section-3 div{
+  position: relative;
+  align-self: center;
+  padding: 0rem 8rem 0rem 3rem;
+}
+
+
 
 
 /* footer */
@@ -234,15 +254,15 @@ footer{
 
 
 
-/* responsiveness */
+/* responsiveness: Mobile View */
 @media screen and (max-width: 768px) {
   body{
     font-family: 'Nunito', sans-serif;
-    overflow-x: hidden;
+    overflow-x: hidden!important;
   }
 
   .nav {
-    position: absolute;
+    position: sticky;
     top: 0px;
   }
   .dropdown {
@@ -306,7 +326,7 @@ footer{
     position: absolute;
     width: 95vw;
     top: 40vh;
-    font-size: 10vw;
+    font-size: 12vw;
     text-align: right;
     left: 0;
     padding-right: 3rem;
@@ -319,15 +339,15 @@ footer{
   #line-chart{
     width: 80vw;
     object-fit: contain;
-    padding: 3rem 3rem 0px 3rem;
+    padding: 3rem 3rem 0rem 3rem;
   }
-  .section-2 h1{
+  .section-2 h1, .section-3 h1{
     font-size: 8vw;
   }
   .section-2-text{
     position: initial;
     top: 0vh;
-    padding: 3rem;
+    padding: 0rem 3rem 0rem 3rem;
   }
   .section-2 a{
     text-decoration: none;
@@ -337,6 +357,15 @@ footer{
     padding-top: 2vh;
   }
 
+  .section-3{
+    flex-direction: column;
+  }
+  .section-3 h2{
+    padding: 0%;
+  }
+  .section-3 div{
+    padding: 0rem 3rem 3rem 3rem;
+  }
 }
 
 .dropdown-active {
