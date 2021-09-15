@@ -291,6 +291,7 @@ footer{
   }
 
   .nav {
+    overflow-x: hidden;
     position: sticky;
     top: 0px;
   }
