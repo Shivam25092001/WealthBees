@@ -1,10 +1,11 @@
 const navSlide = () => {
     const burger = document.querySelector('.burger');
-    const nav = document.querySelector('.dropdown');
+    const dropdowm = document.querySelector('.dropdown');
     const links = document.querySelectorAll('.dropdown button');
+    
 
     burger.addEventListener('click', ()=>{
-        nav.classList.toggle('dropdown-active');
+        dropdowm.classList.toggle('dropdown-active');
 
         links.forEach((link, index)=>{
             if(link.style.animation){
@@ -18,11 +19,30 @@ const navSlide = () => {
         burger.classList.toggle('toggle');
     });
 
-    
+
     
 }
 
 navSlide();
+
+
+
+//nav-bar backgroung coloring
+const nav = document.querySelector('.Logo');
+const logbutton = document.querySelector('.login button');
+window.addEventListener('scroll', ()=>{
+    const section2 = document.querySelector('.section-2').getBoundingClientRect();
+    if(section2.top <= 30){
+        nav.classList.add('nav-bg');
+    }
+    if(section2.top >= 30){
+        nav.classList.remove('nav-bg');
+    }
+});
+
+
+
+
 
 
 const carouselSlide= document.querySelector('.carousel-slide');
