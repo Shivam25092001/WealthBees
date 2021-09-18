@@ -32,12 +32,18 @@ const nav = document.querySelector('.Logo');
 const logbutton = document.querySelector('.login button');
 window.addEventListener('scroll', ()=>{
     const section2 = document.querySelector('.section-2').getBoundingClientRect();
-    if(section2.top <= 30){
+    // if(section2.top <= 30){
+    //     nav.classList.add('nav-bg');
+    // }
+    // if(section2.top >= 30){
+    //     nav.classList.remove('nav-bg');
+    // }
+
+    if(window.scrollY>150){
         nav.classList.add('nav-bg');
     }
-    if(section2.top >= 30){
-        nav.classList.remove('nav-bg');
-    }
+    else nav.classList.remove('nav-bg');
+
 });
 
 
