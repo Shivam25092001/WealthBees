@@ -79,13 +79,13 @@ prevBtn.addEventListener('click',()=>{
 });
 carouselSlide.addEventListener('transitionend',()=>{
     console.log(carouselImages[counter]);
-    if(carouselImages[counter].id==='lastClone')
+    if(carouselImages[counter].id=='lastClone')                             //== pe chlega === pe nhi
     {
         carouselSlide.style.transition="none";
         counter=carouselImages.length-2;
         carouselSlide.style.transform='translateX('+(-size*counter)+'px)';
     }
-    if(carouselImages[counter].id==='firstClone')
+    if(carouselImages[counter].id=='firstClone')                            //== pe chlega === pe nhi
     {
         carouselSlide.style.transition="none";
         counter=carouselImages.length-counter;
