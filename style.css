@@ -2,7 +2,7 @@
 * {
   margin: 0%;
   padding: 0%;
-  box-sizing: content-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -81,7 +81,7 @@ nav{
   color: white;
   font-size: 15px;
   text-shadow: 2px 2px 5px rgba(78, 78, 78, 0.952);
-  padding: 10px 20px 10px 40px;
+  padding: 10px 20px 10px 2px;
 }
 
 .capabilities ul,
@@ -168,22 +168,6 @@ nav{
 }
 
 
-/*carousel*/
-.carousel-container
-{
-  width:65rem;
-  margin:auto;
-  overflow:hidden;
-}
-
-.carousel-slide
-{
-  display:flex;
-  width:100%;
-  height:35rem;
-}
-
-
 
 
 
@@ -210,9 +194,16 @@ nav{
   justify-content: space-around;
 }
 #line-chart{
-  width: 45%;
+  width: 45vw;
+  height: min-content;
   object-fit: contain;
-  padding: 8rem 8rem 8rem 3rem;
+  box-shadow: 5px 5px 20px grey;
+  padding: 10vh 20px 10vh 20px;
+  position: relative;
+  top: 30vh;
+  right: 8rem;
+  background-color: #ffffff;
+  border-radius: 0.3rem;
 }
 .section-2 h1, .section-3 h1, .section-5 h1{
   font-size: 3vw;
@@ -220,7 +211,14 @@ nav{
 .section-2-text{
   position: relative;
   top: 18vh;
-  padding-left: 8rem;
+  left: 8rem;
+  background-color: #b8c6db;
+  background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);
+  box-shadow: 5px 5px 50px rgba(189, 189, 243, 0.384);
+  z-index: -1;
+  height: 70vh;
+  padding: 3rem 32vw 0rem 3rem;
+  border-radius: 0.5rem;
 }
 .section-2 a, .section-3 a{
   text-decoration: none;
@@ -241,12 +239,46 @@ nav{
   background-clip:text;
  -webkit-background-clip:text;
   align-self: center;
+  z-index: 1;
 }
 .section-3 div{
+  z-index: -1;
   position: relative;
   align-self: center;
-  padding: 0rem 8rem 0rem 3rem;
+  width: 60vw;
+  height: 60vh;
+  padding: 10vh 3rem 0rem 3rem;
+  margin-right: 8rem;
+  background-color: #d9d9d9;
+  background-image: linear-gradient(315deg, #d9d9d9 0%, #f6f2f2 74%);
+  border-radius: 0.5rem;
+  box-shadow: 5px 5px 50px rgba(72, 102, 102, 0.295);
 }
+
+
+
+
+
+/* section-4 */
+
+/*carousel*/
+.carousel-container
+{
+  width:65rem;
+  margin:auto;
+  overflow:hidden;
+}
+
+.carousel-slide
+{
+  display:flex;
+  width:100%;
+  height:35rem;
+}
+
+
+
+
 
 
 
