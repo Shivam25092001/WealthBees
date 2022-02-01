@@ -19,8 +19,6 @@ const navSlide = () => {
         burger.classList.toggle('toggle');
     });
 
-
-    
 }
 
 navSlide();
@@ -30,6 +28,7 @@ navSlide();
 //nav-bar backgroung coloring
 const nav = document.querySelector('.Logo');
 const logbutton = document.querySelector('.login button');
+const dropdown = document.querySelector('.dropdown');
 window.addEventListener('scroll', ()=>{
     const section2 = document.querySelector('.section-2').getBoundingClientRect();
     // if(section2.top <= 30){
@@ -42,7 +41,9 @@ window.addEventListener('scroll', ()=>{
     if(window.scrollY>150){
         nav.classList.add('nav-bg');
     }
-    else nav.classList.remove('nav-bg');
+    else {
+        nav.classList.remove('nav-bg');
+    }
 
 });
 

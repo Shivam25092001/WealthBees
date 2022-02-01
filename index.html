@@ -13,7 +13,7 @@
   #7. footer
 
   ## Fully functional navbar : done
-  ## All sections of the home-page have been created through <div class = "section-#">
+  ## All sections of the home-page have been created through <section class = "section-#">
   ## We can use class grey, white and accent to give common text colors:
       -grey: rgb(71, 71, 71)
       -white: #000000
@@ -39,6 +39,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mobileView.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <!-- fav-icon link -->
@@ -48,10 +49,15 @@
     <script>
       AOS.init();
     </script>
-    <img class="logo-a" src="home-images/logo.png" />
+    
     <!-- navbar -->
     <nav class="Logo">
+      
       <div class="dropdown">
+        <div class="">
+          <a href="#"><img class="logo-a" src="home-images/logo.png" /></a>
+        </div>
+
         <div class="capabilities hover-underline-animation">
           <button>Capabilities</button>
           <ul>
@@ -82,7 +88,9 @@
           <button>Contacts</button>
         </div>
 
-        <div class="login"><button>Login</button></div>
+        <div class="login">
+          <button>Login</button>
+        </div>
       </div>
       <!-- hamburger-icon -->
       <div class="burger">
@@ -92,231 +100,224 @@
       </div>
     </nav>
 
-    <div>
-    <!--front-page image-->
-    <img
-      class="home-bg"
-      src="home-images/pexels-juan-pablo-serrano-arenas-1250452.jpg"
-      alt=""
-    />
     <!-- <h4>Brand of Cadence Finserve Pvt. Ltd.</h4> -->
 
-    <div class="section-1">
-      <h1 class="white" data-aos="fade-up" data-aos-duration="3000">
-        What makes us different moves to the firm !
-      </h1>
-    </div>
+    <div class="container">
+      <section class="section-1">
+        <h1 class="white" data-aos="fade-up" data-aos-duration="3000">
+          What makes us different moves to the firm !
+        </h1>
+      </section>
 
-    <div class="section-2">
-      <div class="section-2-text" data-aos="fade-right">
-        <h1 class="grey">Tension matt lena Profit Banega ...</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-          optio harum laudantium! Ducimus quos, iste pariatur beatae in ex
-          porro?
-        </p>
-        <a href="#" class="read-more">Read More ...</a>
-      </div>
-      <!-- <canvas id="line-chart"></canvas> -->
-      <div class="section-2-img" data-aos="zoom-out-left">
-        <img id="line-chart" src="home-images/graph.png" alt="progress-graph" />
-      </div>
-    </div>
-
-    <div class="section-3">
-      <h2 data-aos="fade-right">&#x20B9;</h2>
-      <div data-aos="fade-left">
-        <h1 class="grey">Our Firms of Investment</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
-          facilis ullam soluta quas ad aliquam incidunt quo quaerat repellat
-          eveniet cumque veritatis, libero error eum, reiciendis molestiae?
-          Deserunt, commodi asperiores.
-          <br />
+      <section class="section-2">
+        <div class="section-2-text" data-aos="fade-right">
+          <h1 class="grey">Tension matt lena Profit Banega ...</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+            optio harum laudantium! Ducimus quos, iste pariatur beatae in ex
+            porro?
+          </p>
           <a href="#" class="read-more">Read More ...</a>
-        </p>
-      </div>
-    </div>
+        </div>
+        <!-- <canvas id="line-chart"></canvas> -->
+        <div class="section-2-img" data-aos="zoom-out-left">
+          <img id="line-chart" src="home-images/graph.png" alt="progress-graph" />
+        </div>
+      </section>
 
-    <div class="section-5">
-          
-          <div class="section-5-images">
-            <img
-              data-aos="zoom-out-left"
-              id="section-5-image1"
-              src="wb/people-2588594_1920.jpg"
-              alt=""
-            />
-            <img
-              data-aos="zoom-out-down"
-              id="section-5-image2"
-              src="wb/36bef8eec1f59144820904d50217a350.jpg"
-              alt=""
-            />
-            <img
-              data-aos="zoom-out-right"
-              id="section-5-image3"
-              src="images/pexels-pixabay-69415.jpg"
-              alt=""
-            />
-          </div>
-          <div class="section-5-text" data-aos="fade-right" data-aos-delay="500">
-            <h1 class="grey">Insights</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-              optio harum laudantium! Ducimus quos, iste pariatur beatae in ex
-              porro?
-            </p>
+      <section class="section-3">
+        <h2 data-aos="fade-right">&#x20B9;</h2>
+        <div class = "section-3-text" data-aos="fade-left">
+          <h1 class="grey">Our Firms of Investment</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
+            facilis ullam soluta quas ad aliquam incidunt quo quaerat repellat
+            eveniet cumque veritatis, libero error eum, reiciendis molestiae?
+            Deserunt, commodi asperiores.
+            <br />
             <a href="#" class="read-more">Read More ...</a>
-          </div>
-    </div>
-
-    <div class="section-4">
-      <!-- section-4 will be containing carausal -->
-      <h1>Our Capabilities</h1>
-      <div class="slider">
-
-        <div class="slider-links">
-          <a href="#slide-1"
-            ><div class="icon">@</div>
-            <div class="txt">Financial Planning</div></a
-          >
-          <a href="#slide-2"
-            ><div class="icon">%</div>
-            <div class="txt">Estate Planning</div></a
-          >
-          <a href="#slide-3"
-            ><div class="icon">&</div>
-            <div class="txt">Taxation</div></a
-          >
-          <a href="#slide-4"
-            ><div class="icon">#</div>
-            <div class="txt">Wealth Management</div></a
-          >
-          <a href="#slide-5"
-            ><div class="icon">$</div>
-            <div class="txt">Loan</div></a
-          >
-          <a href="#slide-6"
-            ><div class="icon">8</div>
-            <div class="txt">Insurance</div></a
-          >
+          </p>
         </div>
+      </section>
 
-        <div class="slides">
-          <div id="slide-1">
-            <div class="div-slide">
-              <img src="images/1.jpg" alt="" />
-              <div>
-                <h4>Financial Planning</h4>
-                <br>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Exercitationem tempore enim libero ut harum. Excepturi dolorum
-                dolore cumque aliquid rem. Magni dicta tenetur doloribus id
-                accusantium molestias maxime reprehenderit sapiente quasi nisi
-                ut, corporis omnis consequatur impedit quia. Dicta incidunt
-                praesentium beatae temporibus ut aliquam animi neque?
-                Reprehenderit, mollitia et.
-                <br>
-                <a href="#" class="read-more">Read More ...</a>
+      <section class="section-5">
+            
+            <div class="section-5-images">
+              <img
+                data-aos="zoom-out-left"
+                id="section-5-image1"
+                src="wb/people-2588594_1920.jpg"
+                alt=""
+              />
+              <img
+                data-aos="zoom-out-down"
+                id="section-5-image2"
+                src="wb/36bef8eec1f59144820904d50217a350.jpg"
+                alt=""
+              />
+              <img
+                data-aos="zoom-out-right"
+                id="section-5-image3"
+                src="images/pexels-pixabay-69415.jpg"
+                alt=""
+              />
+            </div>
+            <div class="section-5-text" data-aos="fade-right" data-aos-delay="500">
+              <h1 class="grey">Insights</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+                optio harum laudantium! Ducimus quos, iste pariatur beatae in ex
+                porro?
+              </p>
+              <a href="#" class="read-more">Read More ...</a>
+            </div>
+      </section>
+
+      <section class="section-4">
+        <!-- section-4 will be containing carausal -->
+        <h1>Our Capabilities</h1>
+        <div class="slider">
+
+          <div class="slider-links">
+            <a href="#slide-1"
+              ><div class="icon">@</div>
+              <div class="txt">Financial Planning</div></a
+            >
+            <a href="#slide-2"
+              ><div class="icon">%</div>
+              <div class="txt">Estate Planning</div></a
+            >
+            <a href="#slide-3"
+              ><div class="icon">&</div>
+              <div class="txt">Taxation</div></a
+            >
+            <a href="#slide-4"
+              ><div class="icon">#</div>
+              <div class="txt">Wealth Management</div></a
+            >
+            <a href="#slide-5"
+              ><div class="icon">$</div>
+              <div class="txt">Loan</div></a
+            >
+            <a href="#slide-6"
+              ><div class="icon">8</div>
+              <div class="txt">Insurance</div></a
+            >
+          </div>
+
+          <div class="slides">
+            <div id="slide-1">
+              <div class="div-slide">
+                <img src="images/1.jpg" alt="" />
+                <div>
+                  <h4>Financial Planning</h4>
+                  <br>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Exercitationem tempore enim libero ut harum. Excepturi dolorum
+                  dolore cumque aliquid rem. Magni dicta tenetur doloribus id
+                  accusantium molestias maxime reprehenderit sapiente quasi nisi
+                  ut, corporis omnis consequatur impedit quia. Dicta incidunt
+                  praesentium beatae temporibus ut aliquam animi neque?
+                  Reprehenderit, mollitia et.
+                  <br>
+                  <a href="#" class="read-more">Read More ...</a>
+                </div>
               </div>
             </div>
-          </div>
-          <div id="slide-2">
-            <div class="div-slide">
-              <img src="images/2.jpg" alt="" />
-              <div>
-                <h4>Estate Planning</h4>
-                <br>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Exercitationem tempore enim libero ut harum. Excepturi dolorum
-                dolore cumque aliquid rem. Magni dicta tenetur doloribus id
-                accusantium molestias maxime reprehenderit sapiente quasi nisi
-                ut, corporis omnis consequatur impedit quia. Dicta incidunt
-                praesentium beatae temporibus ut aliquam animi neque?
-                Reprehenderit, mollitia et.
-                <br>
-                <a href="#" class="read-more">Read More ...</a>
+            <div id="slide-2">
+              <div class="div-slide">
+                <img src="images/2.jpg" alt="" />
+                <div>
+                  <h4>Estate Planning</h4>
+                  <br>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Exercitationem tempore enim libero ut harum. Excepturi dolorum
+                  dolore cumque aliquid rem. Magni dicta tenetur doloribus id
+                  accusantium molestias maxime reprehenderit sapiente quasi nisi
+                  ut, corporis omnis consequatur impedit quia. Dicta incidunt
+                  praesentium beatae temporibus ut aliquam animi neque?
+                  Reprehenderit, mollitia et.
+                  <br>
+                  <a href="#" class="read-more">Read More ...</a>
+                </div>
               </div>
             </div>
-          </div>
-          <div id="slide-3">
-            <div class="div-slide">
-              <img src="images/3.jpg" alt="" />
-              <div>
-                <h4>Taxation</h4>
-                <br>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Exercitationem tempore enim libero ut harum. Excepturi dolorum
-                dolore cumque aliquid rem. Magni dicta tenetur doloribus id
-                accusantium molestias maxime reprehenderit sapiente quasi nisi
-                ut, corporis omnis consequatur impedit quia. Dicta incidunt
-                praesentium beatae temporibus ut aliquam animi neque?
-                Reprehenderit, mollitia et.
-                <br>
-                <a href="#" class="read-more">Read More ...</a>
+            <div id="slide-3">
+              <div class="div-slide">
+                <img src="images/3.jpg" alt="" />
+                <div>
+                  <h4>Taxation</h4>
+                  <br>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Exercitationem tempore enim libero ut harum. Excepturi dolorum
+                  dolore cumque aliquid rem. Magni dicta tenetur doloribus id
+                  accusantium molestias maxime reprehenderit sapiente quasi nisi
+                  ut, corporis omnis consequatur impedit quia. Dicta incidunt
+                  praesentium beatae temporibus ut aliquam animi neque?
+                  Reprehenderit, mollitia et.
+                  <br>
+                  <a href="#" class="read-more">Read More ...</a>
+                </div>
               </div>
             </div>
-          </div>
-          <div id="slide-4">
-            <div class="div-slide">
-              <img src="images/4.jpg" alt="" />
-              <div>
-                <h4>Wealth Management</h4>
-                <br>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Exercitationem tempore enim libero ut harum. Excepturi dolorum
-                dolore cumque aliquid rem. Magni dicta tenetur doloribus id
-                accusantium molestias maxime reprehenderit sapiente quasi nisi
-                ut, corporis omnis consequatur impedit quia. Dicta incidunt
-                praesentium beatae temporibus ut aliquam animi neque?
-                Reprehenderit, mollitia et.
-                <br>
-                <a href="#" class="read-more">Read More ...</a>
+            <div id="slide-4">
+              <div class="div-slide">
+                <img src="images/4.jpg" alt="" />
+                <div>
+                  <h4>Wealth Management</h4>
+                  <br>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Exercitationem tempore enim libero ut harum. Excepturi dolorum
+                  dolore cumque aliquid rem. Magni dicta tenetur doloribus id
+                  accusantium molestias maxime reprehenderit sapiente quasi nisi
+                  ut, corporis omnis consequatur impedit quia. Dicta incidunt
+                  praesentium beatae temporibus ut aliquam animi neque?
+                  Reprehenderit, mollitia et.
+                  <br>
+                  <a href="#" class="read-more">Read More ...</a>
+                </div>
               </div>
             </div>
-          </div>
-          <div id="slide-5">
-            <div class="div-slide">
-              <img src="images/5.jpg" alt="" />
-              <div>
-                <h4>Loan</h4>
-                <br>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Exercitationem tempore enim libero ut harum. Excepturi dolorum
-                dolore cumque aliquid rem. Magni dicta tenetur doloribus id
-                accusantium molestias maxime reprehenderit sapiente quasi nisi
-                ut, corporis omnis consequatur impedit quia. Dicta incidunt
-                praesentium beatae temporibus ut aliquam animi neque?
-                Reprehenderit, mollitia et.
-                <br>
-                <a href="#" class="read-more">Read More ...</a>
+            <div id="slide-5">
+              <div class="div-slide">
+                <img src="images/5.jpg" alt="" />
+                <div>
+                  <h4>Loan</h4>
+                  <br>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Exercitationem tempore enim libero ut harum. Excepturi dolorum
+                  dolore cumque aliquid rem. Magni dicta tenetur doloribus id
+                  accusantium molestias maxime reprehenderit sapiente quasi nisi
+                  ut, corporis omnis consequatur impedit quia. Dicta incidunt
+                  praesentium beatae temporibus ut aliquam animi neque?
+                  Reprehenderit, mollitia et.
+                  <br>
+                  <a href="#" class="read-more">Read More ...</a>
+                </div>
               </div>
             </div>
-          </div>
-          <div id="slide-6">
-            <div class="div-slide">
-              <img src="images/6.jpg" alt="" />
-              <div>
-                <h4>Insurance</h4>
-                <br>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Exercitationem tempore enim libero ut harum. Excepturi dolorum
-                dolore cumque aliquid rem. Magni dicta tenetur doloribus id
-                accusantium molestias maxime reprehenderit sapiente quasi nisi
-                ut, corporis omnis consequatur impedit quia. Dicta incidunt
-                praesentium beatae temporibus ut aliquam animi neque?
-                Reprehenderit, mollitia et.
-                <br>
-                <a href="#" class="read-more">Read More ...</a>
+            <div id="slide-6">
+              <div class="div-slide">
+                <img src="images/6.jpg" alt="" />
+                <div>
+                  <h4>Insurance</h4>
+                  <br>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Exercitationem tempore enim libero ut harum. Excepturi dolorum
+                  dolore cumque aliquid rem. Magni dicta tenetur doloribus id
+                  accusantium molestias maxime reprehenderit sapiente quasi nisi
+                  ut, corporis omnis consequatur impedit quia. Dicta incidunt
+                  praesentium beatae temporibus ut aliquam animi neque?
+                  Reprehenderit, mollitia et.
+                  <br>
+                  <a href="#" class="read-more">Read More ...</a>
+                </div>
+                
               </div>
-              
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    
+      </section>
     </div>
     
 
